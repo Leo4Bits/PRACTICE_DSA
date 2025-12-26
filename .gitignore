@@ -1,0 +1,13 @@
+# Chặn tất cả các file có đuôi .exe
+*.exe
+
+# Chặn các file thực thi khác (nếu có)
+*.out
+*.o
+*.obj
+
+# Chặn các thư mục rác của VS Code hoặc hệ thống
+.vscode/
+node_modules/
+.DS_Store
+Thumbs.db

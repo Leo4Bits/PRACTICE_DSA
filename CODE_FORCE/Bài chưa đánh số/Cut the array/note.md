@@ -1,0 +1,1 @@
+Bài này thay vì dùng brute force (vét cạn) ta có thể thấy với một mảng có tổng chia hết cho 3 thì chắc chắn khi chia thành 3 phần mỗi phần sẽ chia hết cho 3 dư 0 hoặc chia 3 dư 0,1,2 nên cout L , R = 1, 2 luôn ngược lại tổng phần tử thuộc mảng k chia hết cho 3 thì cout L, R = 0, 0
