@@ -10,7 +10,7 @@ void result(){
     cin >> str;
     char ned_cnt = str[str.length()-1];
     int cnt = 0;
-    for(int i = 0, j = str.length()-1; i < j; i++, j--){
+    for(int i = 0, j = str.length()-1; i <= j; i++, j--){
         if (i < j){
             if ((str[i] == ned_cnt)) cnt += 1;
             if ((str[j] == ned_cnt)) cnt += 1;
