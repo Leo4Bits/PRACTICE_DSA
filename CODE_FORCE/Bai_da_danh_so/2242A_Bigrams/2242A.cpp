@@ -10,14 +10,16 @@ int main(){
     while(t--){
         cin >> k;
         int cd = 0;
+        bool existed = false;
         while (k--){
             cin >> c;
             cd = (c >=2) ? cd + 1 : cd;
+            if (c > 2) existed = true;
             
         }
-        if (cd >= 2) cout << "YES" << endl;
+        if ((cd >= 2) || existed ) cout << "YES" << endl;
         else cout << "NO" << endl;
 
     }
     return 0;
-}
+} 
