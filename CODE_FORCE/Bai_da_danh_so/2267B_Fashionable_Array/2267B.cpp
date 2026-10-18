@@ -29,24 +29,21 @@ int main()
             m[it]++;
         }
 
-        int k_max = m[*(s.begin())];
-
-        for(auto i = s.begin(); i != s.end(); i++)
-        {
-            for(auto j = 0; j < k_max; j++)
-            {
-                de.push_back(*i);
-                if((--m[*i]) == 0) break;
-            }
-        }
         
-        for(auto i = s.begin(); i != s.end(); i++)
+        bool accepted = true;
+
+        while(accepted)
         {
-            if (m[(*i)] == 0) continue;
-            while((m[*i]--) != 0)
+            bool accepted = false;
+            for(auto i = s.begin(); i != s.end(); i++)
             {
-                de.push_back(*i);
+                int item = *i;
+                if((m[item]) == 0) continue;
+                de.push_back(item);
+                --m[item];
+                accepted = true;
             }
+            if(!accepted) break;
         }
 
         FOR(i,0,(de.size()))
