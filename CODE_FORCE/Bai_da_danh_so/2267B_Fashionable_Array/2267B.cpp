@@ -57,6 +57,8 @@ int main()
 }
 // 44 333 2222 11111
 // 44 33 22 11 3 22 111
+// 4321 4321 321 21 1
+// Xoay vòng
 // tư duy để có prefix max, thì max có k lần xuất hiện là nhiêu thì dãy sau nó cũng phải xuất hiện đúng k lần như max 
 // sau đó mới chèn phần (k_i - k_max) vào dần 
 
